@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>JavaScript Namespace</Title>
+            <Author>Anil Mujagic</Author>
+            <Description>Create JS namespace if it doesn't exist.</Description>
+            <HelpUrl />
+            <SnippetTypes />
+            <Keywords />
+            <Shortcut>jsns</Shortcut>
+        </Header>
+        <Snippet>
+            <References />
+            <Imports />
+            <Declarations>
+                <Literal>
+                    <ID>myNamespace</ID>
+                    <ToolTip>Enter name of the namespace</ToolTip>
+                    <Default>myNamespace</Default>
+                </Literal>
+            </Declarations>
+            <Code Language="JavaScript" Kind="" Delimiter="$">
+                <![CDATA[var $myNamespace$ = $myNamespace$ || {};$end$]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>

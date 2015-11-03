@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Angular JS Directive</Title>
+            <Author>Anil Mujagic</Author>
+            <Description>Create AngularJS Directive.</Description>
+            <HelpUrl />
+            <SnippetTypes />
+            <Keywords />
+            <Shortcut>ngdir</Shortcut>
+        </Header>
+        <Snippet>
+            <References />
+            <Imports />
+            <Declarations>
+                <Literal>
+                    <ID>directiveName</ID>
+                    <ToolTip>Enter directive name</ToolTip>
+                    <Default>appMySampleDirective</Default>
+                </Literal>
+            </Declarations>
+            <Code Language="JavaScript" Kind="" Delimiter="$">
+                <![CDATA[(function (app) {
+    'use strict';
+
+    app.directive('$directiveName$', function () {
+        return {
+            restrict: 'E',
+            templateUrl: 'app/__PATH_TO_YOUR_DIRECTIVE__/$directiveName$.html',
+            controller: '$directiveName$Ctrl',
+            controllerAs: 'vm',
+            bindToController: true,
+            scope: {}
+        };
+    });
+
+    app.controller('$directiveName$Ctrl', function (/*putDependenciesHere*/) {
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        // Private variables
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        //var someVariable = null;
+
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        // Public properties exposed to the view
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        var vm = this;
+        //vm.someProperty = null;
+
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        // Public methods exposed to the view
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        //vm.doSomething = function () {
+        //};
+
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        // Initialize
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        initialize();
+
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        // Private functions
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        function initialize() {
+        }
+    });
+}(window.app));]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>

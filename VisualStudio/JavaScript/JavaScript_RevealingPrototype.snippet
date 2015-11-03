@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>JavaScript Revealing Prototype</Title>
+            <Author>Anil Mujagic</Author>
+            <Description>Create Class using Revealing Prototype Pattern.</Description>
+            <HelpUrl />
+            <SnippetTypes />
+            <Keywords />
+            <Shortcut>jsrevprot</Shortcut>
+        </Header>
+        <Snippet>
+            <References />
+            <Imports />
+            <Declarations>
+                <Literal>
+                    <ID>MyClass</ID>
+                    <ToolTip>Enter name of the class</ToolTip>
+                    <Default>MyClass</Default>
+                </Literal>
+            </Declarations>
+            <Code Language="JavaScript" Kind="" Delimiter="$">
+                <![CDATA[var $MyClass$ = function () {
+    // Instance members
+    //this.myVariable = "Revealing Prototype Pattern";$end$
+};
+
+$MyClass$.prototype = (function () {
+    // Private implementation
+    var doSomething = function () {
+        alert(this.myVariable);
+    };
+
+    // Public interface
+    return {
+        doSomething: doSomething
+    };
+}());]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>

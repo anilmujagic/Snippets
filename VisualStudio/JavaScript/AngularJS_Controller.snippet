@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Angular JS Controller</Title>
+            <Author>Anil Mujagic</Author>
+            <Description>Create AngularJS Controller.</Description>
+            <HelpUrl />
+            <SnippetTypes />
+            <Keywords />
+            <Shortcut>ngctrl</Shortcut>
+        </Header>
+        <Snippet>
+            <References />
+            <Imports />
+            <Declarations>
+                <Literal>
+                    <ID>controllerName</ID>
+                    <ToolTip>Enter controller name</ToolTip>
+                    <Default>MySample</Default>
+                </Literal>
+            </Declarations>
+            <Code Language="JavaScript" Kind="" Delimiter="$">
+                <![CDATA[(function (app) {
+    'use strict';
+
+    app.controller('$controllerName$Ctrl', function (/*putDependenciesHere*/$end$) {
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        // Private variables
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        //var someVariable = null;
+
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        // Public properties exposed to the view
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        var vm = this;
+        //vm.someProperty = null;
+
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        // Public methods exposed to the view
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        //vm.doSomething = function () {
+        //};
+
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        // Initialize
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        initialize();
+
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        // Private functions
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        function initialize() {
+        }
+    });
+}(window.app));]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>

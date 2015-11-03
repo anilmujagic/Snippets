@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Angular JS Service Factory</Title>
+            <Author>Anil Mujagic</Author>
+            <Description>Create AngularJS Service Factory.</Description>
+            <HelpUrl />
+            <SnippetTypes />
+            <Keywords />
+            <Shortcut>ngsvc</Shortcut>
+        </Header>
+        <Snippet>
+            <References />
+            <Imports />
+            <Declarations>
+                <Literal>
+                    <ID>serviceName</ID>
+                    <ToolTip>Enter service name</ToolTip>
+                    <Default>mySample</Default>
+                </Literal>
+            </Declarations>
+            <Code Language="JavaScript" Kind="" Delimiter="$">
+                <![CDATA[(function (app) {
+    'use strict';
+
+    app.factory('$serviceName$Svc', function (/*putDependenciesHere*/$end$) {
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        // Private variables
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        //var someVariable = null;
+
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        // Initialize
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        initialize();
+
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        // Public interface
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        return {
+            //doSomething: doSomething
+        };
+
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        // Implementation of public methods
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        //function doSomething() {
+        //}
+
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        // Private functions
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        function initialize() {
+        }
+    });
+}(window.app));]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
