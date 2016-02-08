@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Angular JS Component</Title>
+            <Author>Anil Mujagic</Author>
+            <Description>Create AngularJS Component.</Description>
+            <HelpUrl />
+            <SnippetTypes />
+            <Keywords />
+            <Shortcut>ngcmp</Shortcut>
+        </Header>
+        <Snippet>
+            <References />
+            <Imports />
+            <Declarations>
+                <Literal>
+                    <ID>componentName</ID>
+                    <ToolTip>Enter component name</ToolTip>
+                    <Default>appMySampleComponent</Default>
+                </Literal>
+            </Declarations>
+            <Code Language="JavaScript" Kind="" Delimiter="$">
+                <![CDATA[(function (app) {
+    'use strict';
+
+    app.component('$componentName$', {
+        templateUrl: 'app/__PATH_TO_YOUR_COMPONENT__/$componentName$.html',
+        controller: '$componentName$Ctrl',
+        controllerAs: 'vm',
+        bindings: {}
+    });
+
+    app.controller('$componentName$Ctrl', function (/*putDependenciesHere*/) {
+        // Private variables
+        //var someVariable = null;
+
+
+        // Public properties exposed to the view
+        var vm = this;
+        //vm.someProperty = null;
+
+
+        // Public methods exposed to the view
+        //vm.doSomething = function () {
+        //};
+
+
+        // Initialize
+        initialize();
+
+
+        // Private functions
+        function initialize() {
+        }
+    });
+}(window.app));]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
