@@ -10,7 +10,7 @@
         templateUrl: 'app/__PATH_TO_YOUR_COMPONENT__/${0:mySampleComponent}.html',
         controller: '${0:mySampleComponent}Ctrl',
         controllerAs: 'vm',
-        scope: {}
+        //bindings: {}
     });
 
     app.controller('${0:mySampleComponent}Ctrl', function (/* putDependenciesHere */) {
