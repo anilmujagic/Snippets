@@ -5,6 +5,7 @@ Installation
 ------------
 
 Copy *.sublime-snippet files to:
+
 Linux
 ```
 ~/.config/sublime-text-3/Packages
