@@ -1,6 +1,6 @@
 ﻿<snippet>
     <description>AngularJS Directive</description>
-    <tabTrigger>ngdir</tabTrigger>
+    <tabTrigger>angdir</tabTrigger>
     <scope>source.js,source.ts</scope>
     <content>
 <![CDATA[(function (app) {

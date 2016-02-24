@@ -1,6 +1,6 @@
 ﻿<snippet>
     <description>AngularJS Component</description>
-    <tabTrigger>ngcmp</tabTrigger>
+    <tabTrigger>angcmp</tabTrigger>
     <scope>source.js,source.ts</scope>
     <content>
 <![CDATA[(function (app) {
