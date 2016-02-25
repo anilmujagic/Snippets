@@ -8,7 +8,7 @@
 
     app.controller('${0:MySample}Ctrl', function (/* putDependenciesHere */) {
         // Private variables
-        //var someVariable = null;
+        //var _someVariable = null;
 
 
         // Public properties exposed to the view

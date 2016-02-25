@@ -8,7 +8,7 @@
 
     app.factory('${0:myService}Svc', function (/* putDependenciesHere */) {
         // Private variables
-        //var someVariable = null;
+        //var _someVariable = null;
 
 
         // Initialize
