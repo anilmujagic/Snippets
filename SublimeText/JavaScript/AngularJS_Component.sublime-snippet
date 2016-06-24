@@ -6,14 +6,14 @@
 <![CDATA[(function (app) {
     'use strict';
 
-    app.component('${0:mySampleComponent}', {
-        templateUrl: 'app/__PATH_TO_YOUR_COMPONENT__/${0:mySampleComponent}.html',
-        controller: '${0:mySampleComponent}Ctrl',
+    app.component('app${0:MySampleComponent}', {
+        templateUrl: 'app/__PATH_TO_YOUR_COMPONENT__/app${0:MySampleComponent}.html',
+        controller: ${0:MySampleComponent}Ctrl,
         controllerAs: 'vm',
         //bindings: {}
     });
 
-    app.controller('${0:mySampleComponent}Ctrl', function (/* putDependenciesHere */) {
+    function ${0:MySampleComponent}Ctrl(/* putDependenciesHere */) {
         // Private variables
         //var _someVariable = null;
 
@@ -35,7 +35,7 @@
         // Private functions
         function initialize() {
         }
-    });
+    }
 }(window.app));]]>
     </content>
 </snippet>
